@@ -12,7 +12,35 @@
 <header role="banner">
   <img class="pic-of-me" src="assests/images/me.jpg" alt="Image of Martha Plantz">
 </header>
+  <!-- contact links for mobile/table only -->
+  <div class="mobile-nav">
+      <section role="region" id="contact">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-list-item">
+            <a href="mailto:maplantz89@gmail.com" class="nav-icon icon" target="_blank">
+              Email <i class="fas fa-envelope-square" aria-label="email icon"></i>
+            </a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="https://www.linkedin.com/in/martha-plantz/" class="nav-icon icon" target="_blank">
+              LinkedIn <i class="fab fa-linkedin" aria-label="linkedin icon"></i>
+            </a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="https://github.com/maplantz89" class="nav-icon icon"  target="_blank">
+              GitHub <i class="fab fa-github-square" aria-label="github icon"></i>
+            </a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="assests/Martha Plantz- Web Developer Resume 2019.pdf" class="nav-icon icon"  target="_blank">
+              Resume <i class="fas fa-clipboard" aria-label="resume icon"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
 <div class="main-content">
+  <!-- desktop nav -->
   <div class="desktop-nav">
     <nav role="navigation">
       <ul>
@@ -42,117 +70,89 @@
     </nav>
   </div>
 
-    <main class="info" role="main">
-        <section role="region" id="about">
-            <h2 class='section-title'>About</h2>
-            <hr/>
-            <p>
-              Hey there, my name is Martha Plantz! 
-              I am a full stack web developer who follows life by the quote 
-              <span class="quote">“Do one thing that scares you every day” ~Eleanor Roosevelt</span>. 
-              I have been going through cycles of proving to myself that 
-              I am capable of overcoming any task; receiving my Bachelors
-              in Mathematics, leading a team of mathematics teachers as a 
-              new teacher, developing a love of indoor bouldering despite 
-              my fear of heights, earning my Masters in Education in my 
-              first three years teaching. 
-            </p>
-            <p>
-              I fell instantly in love with programming when seeing assignments 
-              come to life. I was amazed that I was able to create simple programs 
-              from nothing! I am ready for more challenges that push me to continue 
-              growing and doing something that scares me every day. I would love to 
-              talk more if you have any questions!
-              
-              Also, <a href="assests/Martha Plantz- Web Developer Resume 2019.pdf" class="icon" target="_blank">check out my resume >></a>            
-            </p>
-        </section>
+  <!-- about -->
+  <main class="info" role="main" id="about">
+    <section role="region">
+      <h2 class='section-title'>About</h2>
+      <hr/>
+      <p>
+        Hey there, my name is Martha Plantz! 
+        I am a full stack web developer who follows life by the quote 
+        <span class="quote">“Do one thing that scares you every day” ~Eleanor Roosevelt</span>. 
+        I have been going through cycles of proving to myself that 
+        I am capable of overcoming any task; receiving my Bachelors
+        in Mathematics, leading a team of mathematics teachers as a 
+        new teacher, developing a love of indoor bouldering despite 
+        my fear of heights, earning my Masters in Education in my 
+        first three years teaching. 
+      </p>
+      <p>
+        I fell instantly in love with programming when seeing assignments 
+        come to life. I was amazed that I was able to create simple programs 
+        from nothing! I am ready for more challenges that push me to continue 
+        growing and doing something that scares me every day. I would love to 
+        talk more if you have any questions!
+        
+        Also, <a href="assests/Martha Plantz- Web Developer Resume 2019.pdf" class="icon" target="_blank">check out my resume >></a>            
+      </p>
+    </section>
 
-        <section role="region" id="projects">
-          <h2 class='section-title'>Projects</h2>
-          <hr/>
+    <!-- projects -->
+    <div id="projects"></div>
+    <section role="region">
+      <h2 class='section-title'>Projects</h2>
+      <hr/>
 
-          <!-- first project -->
-          <img class="app-pic" src="assests/images/SproutInAction2.png" alt="Screenshot of sessions page in Sprout">
-          <h3 class="project-title">Sprout
-              <a href="https://github.com/thinkful-ei-emu/ZOMGPOW-Client" target="_blank"><i class="fab fa-github-square project-icon icon" aria-label="github icon"></i></a>
-              <a href="https://github.com/thinkful-ei-emu/ZOMGPOW-Server" target="_blank"><i class="fab fa-github-square project-icon icon" aria-label="github icon"></i></a>
-              <a href="https://sprout-app.now.sh/"><i class="fas fa-external-link-square-alt project-icon icon"></i>
-              </a>
-            </h3>
-            <p class="sources">React, CSS, Node.js, postgreSQL, Express, Knex, Socket.io </p>
-          <p class="description">Sprout is a formative assessment tool used to help teachers deliver specific, goal-oriented, and timely feedback in the classroom. </p>
+      <!-- first project -->
+      <img class="app-pic" src="assests/images/SproutInAction2.png" alt="Screenshot of sessions page in Sprout">
+      <h3 class="project-title">Sprout
+          <a href="https://github.com/thinkful-ei-emu/ZOMGPOW-Client" class="project-icon icon" target="_blank"><i class="fab fa-github-square" aria-label="github icon"></i></a>
+          <a href="https://github.com/thinkful-ei-emu/ZOMGPOW-Server" class="project-icon icon"  target="_blank"><i class="fab fa-github-square" aria-label="github icon"></i></a>
+          <a href="https://sprout-app.now.sh/" class="project-icon icon"  target="_blank"><i class="fas fa-external-link-square-alt"></i>
+          </a>
+        </h3>
+        <p class="sources">React, CSS, Node.js, postgreSQL, Express, Knex, Socket.io </p>
+      <p class="description">Sprout is a formative assessment tool used to help teachers deliver specific, goal-oriented, and timely feedback in the classroom. </p>
 
-          <!-- second project -->
-          <img class="app-pic" src="assests/images/cookbookApp.png" alt="Screenshot of the myCookbook Application">
-          <h3 class="project-title">myCookbook
-              <a href="https://github.com/thinkful-ei-emu/cookbook-martha" target="_blank"><i class="fab fa-github-square project-icon icon" aria-label="github icon"></i></a>
-              <a href="https://github.com/thinkful-ei-emu/martha-capstone1-server" target="_blank"><i class="fab fa-github-square project-icon icon" aria-label="github icon"></i></a>
-              <a href="https://my-cookbook-app.maplantz89.now.sh/login"><i class="fas fa-external-link-square-alt project-icon icon"></i>
-              </a>
-            </h3>
-            <p class="sources">CSS, React, Node.js, postgreSQL </p>
-          <p class="description">
-            This cookbook application allows users to search, create and organize recipes into multiple cookbooks. This will make 
-            organization for home cooks expontentially better.
-          </p>
+      <!-- second project -->
+      <img class="app-pic" src="assests/images/cookbookApp.png" alt="Screenshot of the myCookbook Application">
+      <h3 class="project-title">myCookbook
+          <a href="https://github.com/thinkful-ei-emu/cookbook-martha" class="project-icon icon"  target="_blank"><i class="fab fa-github-square" aria-label="github icon"></i></a>
+          <a href="https://github.com/thinkful-ei-emu/martha-capstone1-server" class="project-icon icon"  target="_blank"><i class="fab fa-github-square" aria-label="github icon"></i></a>
+          <a href="https://my-cookbook-app.maplantz89.now.sh/login" class="project-icon icon"  target="_blank"><i class="fas fa-external-link-square-alt"></i>
+          </a>
+        </h3>
+        <p class="sources">CSS, React, Node.js, postgreSQL </p>
+      <p class="description">
+        This cookbook application allows users to search, create and organize recipes into multiple cookbooks. This will make 
+        organization for home cooks expontentially better.
+      </p>
 
-          <!-- third project -->
-          <img class="app-pic" src="assests/images/quizapp-img.png" alt="Screenshot of the Trivia Application">
-          <h3 class="project-title">Test Your Trivia!
-              <a href="https://github.com/thinkful-ei-emu/martha-tart-quizApp" target="_blank"><i class="fab fa-github-square project-icon icon" aria-label="github icon"></i></a>
-              <a href="https://thinkful-ei-emu.github.io/martha-tart-quizApp/dist/" target="_blank"><i class="fas fa-external-link-square-alt project-icon icon"></i>
-              </a>
-          </h3>
-          <p class="sources">CSS, HTML5, JavaScript, Open Trivia Database API, jQuery </p>
-          <p class="description">
-            This application allows users to practice their trivia skills, by keeping track of their high score after completing a 
-            series of multiple-choice quiz questions. 
-          </p>
-        </section>
-
-        <!-- contact links for mobile/table only -->
-        <div class="mobile-nav">
-        <section role="region" id="contact">
-          <li>
-            <a href="mailto:maplantz89@gmail.com" target="_blank">
-              Email <i class="fas fa-envelope-square nav-icon icon" aria-label="email icon"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/martha-plantz/" target="_blank">
-              LinkedIn <i class="fab fa-linkedin nav-icon icon" aria-label="linkedin icon"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/maplantz89" target="_blank">
-              GitHub <i class="fab fa-github-square nav-icon icon" aria-label="github icon"></i>
-            </a>
-          </li>
-          <li>
-            <a href="assests/Martha Plantz- Web Developer Resume 2019.pdf" target="_blank">
-              Resume <i class="fas fa-clipboard nav-icon icon" aria-label="resume icon"></i>
-            </a>
-          </li>
-        </section>
-      </div>
-    </main>
+      <!-- third project -->
+      <img class="app-pic" src="assests/images/quizapp-img.png" alt="Screenshot of the Trivia Application">
+      <h3 class="project-title">Test Your Trivia!
+          <a href="https://github.com/thinkful-ei-emu/martha-tart-quizApp" class="project-icon icon"  target="_blank"><i class="fab fa-github-square" aria-label="github icon"></i></a>
+          <a href="https://thinkful-ei-emu.github.io/martha-tart-quizApp/dist/" class="project-icon icon"  target="_blank"><i class="fas fa-external-link-square-alt"></i>
+          </a>
+      </h3>
+      <p class="sources">CSS, HTML5, JavaScript, Open Trivia Database API, jQuery </p>
+      <p class="description">
+        This application allows users to practice their trivia skills, by keeping track of their high score after completing a 
+        series of multiple-choice quiz questions. 
+      </p>
+    </section>
+  </main>
 </div>
 
 <!-- footer for mobile/tablet only -->
 <footer role="contentinfo" class="mobile-footer">
   <ul class="footer-list">
-    <div class="footer-links icon">
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-    </div>
+    <li>
+      <a href="#projects" class="footer-list-items icon">Projects</a>
+    </li>
+    <li>
+      <a href="#about" class="footer-list-items icon">About</a>
+    </li>
   </ul>
 </footer>
 </body>
