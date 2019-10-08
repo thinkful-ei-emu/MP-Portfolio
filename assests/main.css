@@ -1,0 +1,174 @@
+header{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  margin: auto;
+}
+
+.pic-of-me{
+  margin:  auto 5%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.main-content{
+  display: flex; 
+}
+
+.desktop-nav{
+  display: flex; 
+  flex-direction: row-reverse;
+  width: 20%;
+  margin-top: -20px;
+  border-right: grey solid 1px;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+main{
+  display: flex; 
+  flex-direction: column;
+  width: 45%;
+  margin-left: 40px;
+  line-height: 30px;
+  padding: 0px 50px 0px 20px;
+}
+
+.section-title{
+  font-size: 2.5em;
+  font-weight: lighter;
+  line-height: 0px;
+}
+
+hr{
+  width: 70%;
+  margin: -10px 0px 20px 0px;
+}
+
+.quote{
+  font-style: italic;
+}
+
+.app-pic{
+  border: rgb(172, 172, 172) 1px solid;
+  box-shadow: 1px 1px 1px rgb(193, 193, 193);
+  width: 90%;
+  margin-top: 16px;
+}
+
+li{
+  list-style: none;
+  text-align: right;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+ul{
+  padding-right: 15px;
+}
+
+.nav-icon{
+  font-size: 2em;
+  padding: 5px;
+}
+
+.project-icon{
+  padding-left: 5px;
+}
+
+.project-title{
+  font-size: 1.5em;
+  font-weight: lighter;
+  font-style: oblique;
+  margin: 0px;
+}
+
+.sources{
+  margin-top: 0px;
+  font-size: .8em;
+}
+
+.description{
+  margin: 3px auto 50px;
+}
+
+a:hover{
+  color: rgb(230, 158, 69);
+}
+
+.mobile-footer{
+  display: none;
+}
+
+/* media queries */
+
+/* tablet break point 768 */
+@media only screen and (max-width: 768px){
+  .pic-of-me{
+    margin:  auto;
+  }
+
+  .desktop-nav{
+    display: none;
+  }
+
+  .mobile-footer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(14, 147, 116); 
+  }
+
+  main{
+    margin: auto;
+    width: 70%;
+  }
+
+  .info{
+    padding-bottom: 100px;
+  }
+
+  .footer-links{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .mobile-nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-nav li{
+    margin: 25px auto;
+    width: 50%;
+    border: rgb(14, 147, 116) 1px solid;
+    box-shadow:  2px 2px 1px #c1c1c1;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: center
+  }
+
+  .footer-list{
+    padding:0;
+  }
+}
+
+/* mobile break point 480px */
+@media only screen and (max-width: 480px){
+
+  main{
+    width: 100%;
+  }
+
+  .mobile-nav li{
+    width: 70%;
+  }
+}
